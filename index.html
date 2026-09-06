@@ -339,12 +339,13 @@
       <li><a href="#account"><span class="num">03</span>Account &amp; sign-in</a></li>
       <li><a href="#online-play"><span class="num">04</span>Online play &amp; matches</a></li>
       <li><a href="#diagnostics"><span class="num">05</span>Diagnostics &amp; crash reports</a></li>
-      <li><a href="#sharing"><span class="num">06</span>Who we share data with</a></li>
-      <li><a href="#retention"><span class="num">07</span>Retention &amp; deletion</a></li>
-      <li><a href="#choices"><span class="num">08</span>Your choices</a></li>
-      <li><a href="#children"><span class="num">09</span>Children&#8217;s privacy</a></li>
-      <li><a href="#changes"><span class="num">10</span>Changes to this policy</a></li>
-      <li><a href="#contact"><span class="num">11</span>Contact</a></li>
+      <li><a href="#advertising"><span class="num">06</span>Advertising</a></li>
+      <li><a href="#sharing"><span class="num">07</span>Who we share data with</a></li>
+      <li><a href="#retention"><span class="num">08</span>Retention &amp; deletion</a></li>
+      <li><a href="#choices"><span class="num">09</span>Your choices</a></li>
+      <li><a href="#children"><span class="num">10</span>Children&#8217;s privacy</a></li>
+      <li><a href="#changes"><span class="num">11</span>Changes to this policy</a></li>
+      <li><a href="#contact"><span class="num">12</span>Contact</a></li>
     </ol>
   </details>
 
@@ -356,12 +357,13 @@
       <li><a href="#account"><span class="num">03</span>Account &amp; sign-in</a></li>
       <li><a href="#online-play"><span class="num">04</span>Online play &amp; matches</a></li>
       <li><a href="#diagnostics"><span class="num">05</span>Diagnostics</a></li>
-      <li><a href="#sharing"><span class="num">06</span>Who we share with</a></li>
-      <li><a href="#retention"><span class="num">07</span>Retention &amp; deletion</a></li>
-      <li><a href="#choices"><span class="num">08</span>Your choices</a></li>
-      <li><a href="#children"><span class="num">09</span>Children&#8217;s privacy</a></li>
-      <li><a href="#changes"><span class="num">10</span>Changes</a></li>
-      <li><a href="#contact"><span class="num">11</span>Contact</a></li>
+      <li><a href="#advertising"><span class="num">06</span>Advertising</a></li>
+      <li><a href="#sharing"><span class="num">07</span>Who we share with</a></li>
+      <li><a href="#retention"><span class="num">08</span>Retention &amp; deletion</a></li>
+      <li><a href="#choices"><span class="num">09</span>Your choices</a></li>
+      <li><a href="#children"><span class="num">10</span>Children&#8217;s privacy</a></li>
+      <li><a href="#changes"><span class="num">11</span>Changes</a></li>
+      <li><a href="#contact"><span class="num">12</span>Contact</a></li>
     </ol>
   </nav>
 
@@ -379,7 +381,7 @@
           </tbody>
         </table>
       </div>
-      <p>We don't run ads, we don't use analytics or advertising trackers, and we've never sold anyone's data.</p>
+      <p>The app shows ads served by Google AdMob in every mode &mdash; including Play vs. Bots and Play with Friends, neither of which otherwise needs an account or a server of ours at all &mdash; see &sect;6. We don't use any other analytics or advertising trackers, and we've never sold anyone's data.</p>
     </section>
 
     <section class="clause" id="offline-play">
@@ -415,14 +417,22 @@
       <p>If the app crashes or hits an unexpected error, a report is sent to Sentry, our crash-reporting service, so we can find and fix the problem. These reports can include your device model, OS version, and a short trail of what the app was doing right before the error &mdash; never your hand or another player's private game state.</p>
     </section>
 
+    <section class="clause" id="advertising">
+      <div class="clause-head"><span class="clause-num">06</span><h2>Advertising</h2></div>
+      <p>Twenty&#8209;Nine shows ads through <strong>Google AdMob</strong>, in every mode &mdash; including Play vs. Bots and Play with Friends, which don't otherwise need an account or a connection to us at all. Showing an ad still means your device talks directly to Google's own ad servers, independently of anything described in &sect;3&ndash;4.</p>
+      <p>The app never shows an App Tracking Transparency prompt, so AdMob only ever serves <strong>non&#8209;personalized</strong> ads here &mdash; it doesn't use your device's advertising identifier to build a profile of you or track you across other apps. Google may still use technical identifiers (your device's advertising ID, IP address, and coarse ad-serving data) to serve an ad, measure whether it was shown, and guard against fraud &mdash; standard for any app that shows ads at all, not something specific to how Twenty&#8209;Nine is built.</p>
+      <p>Google's own policies cover exactly what AdMob does with this data: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">how Google uses information from sites and apps that use its services</a>.</p>
+    </section>
+
     <section class="clause" id="sharing">
-      <div class="clause-head"><span class="clause-num">06</span><h2>Who we share data with</h2></div>
-      <p>We don't sell your data, and we don't share it for advertising. The only outside services involved are the ones that make the app itself work:</p>
+      <div class="clause-head"><span class="clause-num">07</span><h2>Who we share data with</h2></div>
+      <p>We don't sell your data. The outside services involved are the ones that make the app itself work, including the ads described in &sect;6:</p>
       <div class="table-scroll">
         <table class="data-table">
           <thead><tr><th>Service</th><th>What it's for</th></tr></thead>
           <tbody>
-            <tr><td>Firebase (Google)</td><td>Sign-in with Google/Apple, account identity.</td></tr>
+            <tr><td>Firebase (Google)</td><td>Sign-in with Google/Apple, account identity, and remote app configuration.</td></tr>
+            <tr><td>Google AdMob</td><td>Shows ads &mdash; see &sect;6.</td></tr>
             <tr><td>Sentry</td><td>Crash and error reporting.</td></tr>
           </tbody>
         </table>
@@ -431,32 +441,32 @@
     </section>
 
     <section class="clause" id="retention">
-      <div class="clause-head"><span class="clause-num">07</span><h2>Retention &amp; deletion</h2></div>
-      <p>We keep your account and match history for as long as your account exists, so your friends list and history stay intact between sessions. You can request deletion of your account and associated data at any time &mdash; see &sect;11 for how to reach us.</p>
+      <div class="clause-head"><span class="clause-num">08</span><h2>Retention &amp; deletion</h2></div>
+      <p>We keep your account and match history for as long as your account exists, so your friends list and history stay intact between sessions. You can request deletion of your account and associated data at any time &mdash; see &sect;12 for how to reach us.</p>
       <div class="callout">This section describes the current, honest state of the app. If in-app self-service deletion is added later, this page should be updated to point to it directly.</div>
     </section>
 
     <section class="clause" id="choices">
-      <div class="clause-head"><span class="clause-num">08</span><h2>Your choices</h2></div>
+      <div class="clause-head"><span class="clause-num">09</span><h2>Your choices</h2></div>
       <ul>
-        <li>You can play entirely offline (vs. bots or over LAN) without ever creating an account or sending us anything.</li>
+        <li>You can play entirely offline (vs. bots or over LAN) without ever creating an account or sending us anything &mdash; Google AdMob is the one exception, per &sect;6.</li>
         <li>You can sign out of your account at any time from the app's own settings.</li>
-        <li>You can ask us to delete your account and the data tied to it &mdash; contact details are in &sect;11.</li>
+        <li>You can ask us to delete your account and the data tied to it &mdash; contact details are in &sect;12.</li>
       </ul>
     </section>
 
     <section class="clause" id="children">
-      <div class="clause-head"><span class="clause-num">09</span><h2>Children&#8217;s privacy</h2></div>
+      <div class="clause-head"><span class="clause-num">10</span><h2>Children&#8217;s privacy</h2></div>
       <p>Twenty&#8209;Nine is not directed at children under 13, and we don't knowingly collect personal information from them. If you believe a child has provided us with personal information, contact us and we'll remove it.</p>
     </section>
 
     <section class="clause" id="changes">
-      <div class="clause-head"><span class="clause-num">10</span><h2>Changes to this policy</h2></div>
+      <div class="clause-head"><span class="clause-num">11</span><h2>Changes to this policy</h2></div>
       <p>If this policy changes in a meaningful way, we'll update the date at the top of this page. Continuing to use Twenty&#8209;Nine after a change means you accept the updated policy.</p>
     </section>
 
     <section class="clause" id="contact">
-      <div class="clause-head"><span class="clause-num">11</span><h2>Contact</h2></div>
+      <div class="clause-head"><span class="clause-num">12</span><h2>Contact</h2></div>
       <p>Questions about this policy, or a request to access or delete your data, can be sent to <a href="mailto:mainul.hasan.shuvro@gmail.com">mainul.hasan.shuvro@gmail.com</a>.</p>
     </section>
 
