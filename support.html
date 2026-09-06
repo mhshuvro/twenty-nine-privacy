@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Twenty-Nine Support</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Barlow:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    color-scheme: light dark;
+    --ground: #fbf7ee;
+    --ground-raised: #f3ecdc;
+    --ink: #1c2a20;
+    --ink-soft: #4a5850;
+    --felt: #14351f;
+    --felt-soft: #2b5238;
+    --gold: #a67f2e;
+    --gold-bright: #c99a3a;
+    --rule: rgba(28, 42, 32, 0.14);
+    --card-bg: #ffffff;
+    --focus: #2b5238;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #0d1f15;
+      --ground-raised: #142a1d;
+      --ink: #ecf3ea;
+      --ink-soft: #a9bdb0;
+      --felt: #eee6cf;
+      --felt-soft: #cfd9d1;
+      --gold: #d9ad52;
+      --gold-bright: #e7c26c;
+      --rule: rgba(236, 243, 234, 0.14);
+      --card-bg: #112a1c;
+      --focus: #e7c26c;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { background: var(--ground); }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+  }
+
+  a { color: var(--felt-soft, var(--felt)); }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold-bright); } }
+  a:focus-visible, button:focus-visible, summary:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 3px;
+  }
+
+  .masthead {
+    background: var(--felt);
+    color: var(--ground);
+    padding: 22px clamp(20px, 5vw, 56px);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 0 var(--rule);
+  }
+  @media (prefers-color-scheme: dark) { .masthead { background: var(--ground-raised); } }
+
+  .mark { font-size: 22px; line-height: 1; flex-shrink: 0; }
+  .brand {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: 0.01em;
+  }
+  .brand small {
+    display: block;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.72;
+    margin-top: 2px;
+  }
+
+  .layout {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: clamp(28px, 5vw, 56px) clamp(20px, 5vw, 56px) 90px;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin: 0 0 14px;
+  }
+  h1 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(30px, 4.4vw, 42px);
+    line-height: 1.12;
+    margin: 0 0 16px;
+    text-wrap: balance;
+    color: var(--ink);
+  }
+  .lede {
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin: 0 0 40px;
+  }
+
+  h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 600;
+    font-size: 21px;
+    margin: 0 0 10px;
+    color: var(--ink);
+  }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 22px 24px;
+    margin-bottom: 18px;
+  }
+  .card p { margin: 0 0 10px; max-width: 62ch; }
+  .card p:last-child { margin-bottom: 0; }
+
+  .contact-box {
+    background: var(--ground-raised);
+    border-left: 3px solid var(--gold);
+    border-radius: 0 4px 4px 0;
+    padding: 18px 22px;
+    margin: 8px 0 40px;
+  }
+  .contact-box .label {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    font-weight: 600;
+    margin: 0 0 6px;
+  }
+  .contact-box a {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  footer {
+    max-width: 62ch;
+    margin: 8px 0 0;
+    padding-top: 26px;
+    border-top: 1px solid var(--rule);
+    font-size: 13px;
+    color: var(--ink-soft);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  footer .mark { font-size: 15px; opacity: 0.6; }
+</style>
+</head>
+<body>
+
+<div class="masthead">
+  <span class="mark">&#9824;</span>
+  <div class="brand">Twenty&#8209;Nine<small>Support</small></div>
+</div>
+
+<div class="layout">
+  <p class="eyebrow">Support</p>
+  <h1>Need a hand with Twenty&#8209;Nine?</h1>
+  <p class="lede">Whether something's not working, you've found a bug, or you just have a question about how the game plays &mdash; get in touch and we'll help.</p>
+
+  <div class="contact-box">
+    <p class="label">Contact</p>
+    <a href="mailto:mainul.hasan.shuvro@gmail.com">mainul.hasan.shuvro@gmail.com</a>
+  </div>
+
+  <div class="card">
+    <h2>Reporting a problem</h2>
+    <p>The more detail the better &mdash; what you were doing right before it happened, your device model and OS version, and (if you can) a screenshot. If the app crashed, a report was very likely already sent automatically; mentioning roughly when it happened still helps us find it faster.</p>
+  </div>
+
+  <div class="card">
+    <h2>Account, friends, and match history</h2>
+    <p>Signed in with Apple or Google and something looks wrong with your account, friends list, or match history? Include the display name or friend code shown in the app so we can look up the right account.</p>
+  </div>
+
+  <div class="card">
+    <h2>Removing your account</h2>
+    <p>Email the address above and we'll delete your account and the data tied to it. See the <a href="./">Privacy Policy</a> for exactly what that includes.</p>
+  </div>
+
+  <footer><span class="mark">&#9824;</span> Twenty&#8209;Nine &middot; a Bangladeshi card game, digitized.</footer>
+</div>
+
+</body>
+</html>
